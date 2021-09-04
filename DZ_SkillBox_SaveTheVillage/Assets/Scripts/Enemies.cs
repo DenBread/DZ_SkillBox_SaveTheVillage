@@ -22,7 +22,7 @@ public class Enemies : MonoBehaviour
     {
         _timerScript = GetComponent<Timer>();
         warrior = GetComponent<Warrior>();
-        _quantityEnemies = Random.Range(2, 4);
+        _quantityEnemies = Random.Range(5, 10);
         StartCoroutine(CoroutineSample());
     }
 
@@ -44,8 +44,10 @@ public class Enemies : MonoBehaviour
                 warrior.CointWarrior -= _quantityEnemies;
             }
 
-            _quantityEnemies = Random.Range(warrior.CointWarrior, warrior.CointWarrior+3);
+            _quantityEnemies = Random.Range(warrior.CointWarrior, warrior.CointWarrior*2);
             _timerScript.second1 = 30f;
+            _timerScript.minuta1 = 0f;
+            _timer = 30f;
         }
     }
 

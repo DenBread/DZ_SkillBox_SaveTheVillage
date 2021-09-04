@@ -38,12 +38,13 @@ public class Timer : MonoBehaviour
 
         if (minuta1 < 0)
         {
-            minutes.text = "Время: 00 : 00";
+            //minutes.text = "Время: 00 : 00";
             //losePanel.SetActive(true);
+            minutes.text = "Время: 0" + minuta1.ToString() + " : " + second1.ToString();
         }
         else
         {
-            minutes.text = "Время: " + minuta1.ToString() + " : " + second1.ToString();
+            minutes.text = "Время: 0" + minuta1.ToString() + " : " + second1.ToString();
         }
 
         //second.text = "" + second1;
