@@ -39,7 +39,7 @@ public class Timer : MonoBehaviour
         if (minuta1 < 0)
         {
             minutes.text = "Время: 00 : 00";
-            losePanel.SetActive(true);
+            //losePanel.SetActive(true);
         }
         else
         {
@@ -50,16 +50,16 @@ public class Timer : MonoBehaviour
         
     }
 
-    private void StopWhatch()
-    {
-        //Mathf.Round(_timeSecond).ToString(); // округляем в целое число
-        if (_timeSecond > 0)
-        {
-            _timeSecond -= Time.deltaTime;
-        }
-        else
-        {
-            _timeSecond = 0;
-        }
-    }
+    //private void StopWhatch()
+    //{
+    //    //Mathf.Round(_timeSecond).ToString(); // округляем в целое число
+    //    if (_timeSecond > 0)
+    //    {
+    //        _timeSecond -= Time.deltaTime;
+    //    }
+    //    else
+    //    {
+    //        _timeSecond = 0;
+    //    }
+    //}
 }

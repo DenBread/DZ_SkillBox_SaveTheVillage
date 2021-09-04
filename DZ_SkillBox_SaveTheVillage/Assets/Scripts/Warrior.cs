@@ -9,6 +9,7 @@ public class Warrior : MonoBehaviour
     public int CointWarrior
     {
         get { return _cointWarrior; }
+        set { _cointWarrior = value; }
     }
 
     private float _traningTime;

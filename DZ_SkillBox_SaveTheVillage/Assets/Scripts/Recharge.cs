@@ -5,13 +5,16 @@ using UnityEngine.UI;
 
 public class Recharge : MonoBehaviour
 {
+    [Header("Buttons")]
     [SerializeField] private Button _buttonPeasant;
     [SerializeField] private Button _buttonWarrior;
+
+    [Header("ImgButtons")]
     [SerializeField] private Image _btnPeasant;
     [SerializeField] private Image _btnWarrior;
 
-    [SerializeField] private bool isSetTruePeasant = false;
-    [SerializeField] private bool isSetTrueWarrior = false;
+    private bool isSetTruePeasant = false;
+    private bool isSetTrueWarrior = false;
 
     private float _timerP, _timerW;
     private float _fillAmount;

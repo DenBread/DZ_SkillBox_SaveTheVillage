@@ -28,6 +28,7 @@ public class Peasant : MonoBehaviour
         {
             millet.AddAndTakeAwayMillet(-2);
             ++_cointPeasant;
+            ++millet._quantityMillet;
             Debug.Log("+1 крестьянин");
         }
         else

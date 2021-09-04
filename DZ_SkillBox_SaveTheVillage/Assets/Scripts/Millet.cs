@@ -5,12 +5,18 @@ using UnityEngine;
 public class Millet : MonoBehaviour
 {
     private int _cointMillet; // кол-во пшеницы
+    public int _quantityMillet; // коэфициент добычи
     private float _timerSecond = 2f;
 
     public int CointMillet
     {
         set { _cointMillet = value; }
         get { return _cointMillet; }
+    }
+
+    private void Start()
+    {
+        _quantityMillet = 1;
     }
 
     private void Update()
@@ -32,7 +38,7 @@ public class Millet : MonoBehaviour
         else
         {
             Debug.Log("Add Millet");
-            AddAndTakeAwayMillet(+1);
+            AddAndTakeAwayMillet(+_quantityMillet);
             _timerSecond = 2f;
         }
     }

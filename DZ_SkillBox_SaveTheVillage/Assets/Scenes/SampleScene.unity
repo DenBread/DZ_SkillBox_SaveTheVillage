@@ -1352,6 +1352,7 @@ GameObject:
   - component: {fileID: 1223990011}
   - component: {fileID: 1223990012}
   - component: {fileID: 1223990013}
+  - component: {fileID: 1223990014}
   m_Layer: 0
   m_Name: ScriptsManager
   m_TagString: Untagged
@@ -1401,6 +1402,7 @@ MonoBehaviour:
   _txtMillet: {fileID: 1845450255}
   _txtPeasant: {fileID: 1418030764}
   _txtTimer: {fileID: 80452787}
+  _txtEnemies: {fileID: 907904329}
 --- !u!114 &1223990009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,8 +1419,8 @@ MonoBehaviour:
   second: {fileID: 1529363678}
   minutes: {fileID: 80452787}
   param: 0
-  second1: 22
-  minuta1: 0
+  second1: 0
+  minuta1: 1
   losePanel: {fileID: 1340352556}
 --- !u!114 &1223990010
 MonoBehaviour:
@@ -1460,8 +1462,6 @@ MonoBehaviour:
   _buttonWarrior: {fileID: 174335065}
   _btnPeasant: {fileID: 731089631}
   _btnWarrior: {fileID: 174335066}
-  isSetTruePeasant: 0
-  isSetTrueWarrior: 0
 --- !u!114 &1223990013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1474,6 +1474,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1db3917e2b4ab49af055d6cd3dc73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1223990014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223990005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58c357c6d52f24392e090bf0151d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _quantityEnemies: 0
+  _timer: 60
+  _isEnemies: 0
 --- !u!1 &1340352556
 GameObject:
   m_ObjectHideFlags: 0
