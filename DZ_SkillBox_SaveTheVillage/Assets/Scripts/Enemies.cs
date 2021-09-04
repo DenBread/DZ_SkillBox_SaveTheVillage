@@ -12,6 +12,7 @@ public class Enemies : MonoBehaviour
     [SerializeField] private int _quantityEnemies; // кол-во врагов
     [SerializeField] private float _timer; // время через сколько появяться враги
     [SerializeField] private bool _isEnemies;
+    [SerializeField] private GameObject _losePanel;
 
     private Timer _timerScript;
 
@@ -34,6 +35,8 @@ public class Enemies : MonoBehaviour
             if (_quantityEnemies > warrior.CointWarrior)
             {
                 Debug.Log("Вы проиграли");
+                _losePanel.SetActive(true);
+                break;
             }
 
             if (_quantityEnemies <= warrior.CointWarrior)

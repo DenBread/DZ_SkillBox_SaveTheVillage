@@ -32,6 +32,6 @@ public class UIManager : MonoBehaviour
         _txtPeasant.text = "Крестьяни: " + _peasant.CointPeasant.ToString();
         _txtMillet.text = "Пшеница: " + _millet.CointMillet.ToString();
         _txtTimer.text = "Время: " + Mathf.Round(_timer.TimerSecond).ToString();
-        _txtEnemies.text = "Враги: " + _enemies.QuantityEnemies.ToString();
+        _txtEnemies.text = "Кол-во врагов: " + _enemies.QuantityEnemies.ToString();
     }
 }

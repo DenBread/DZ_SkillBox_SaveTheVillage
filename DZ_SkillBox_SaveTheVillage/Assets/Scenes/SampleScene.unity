@@ -1434,6 +1434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ffb24ffcaf6935409ce29255dee9075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _quantityMillet: 0
 --- !u!114 &1223990011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1489,6 +1490,7 @@ MonoBehaviour:
   _quantityEnemies: 0
   _timer: 60
   _isEnemies: 0
+  _losePanel: {fileID: 1340352556}
 --- !u!1 &1340352556
 GameObject:
   m_ObjectHideFlags: 0
